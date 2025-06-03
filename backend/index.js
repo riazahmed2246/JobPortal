@@ -33,6 +33,10 @@ app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
 
+import blogRoutes from "./routes/blog.route.js";
+app.use("/api/v1/blogs", blogRoutes);
+
+
 
 app.listen(PORT,()=>{
     connectDB();
