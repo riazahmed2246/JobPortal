@@ -1,0 +1,23 @@
+<h1>Interview Toolkit</h1>
+
+<h2>Videos</h2>
+<% videos.forEach(video => { %>
+  <div>
+    <h3><%= video.title %></h3>
+    <iframe width="560" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+<% }) %>
+
+<h2>Common Questions</h2>
+<ul>
+  <% roles.forEach(role => { %>
+    <li><a href="/interview/questions/<%= role %>"><%= role %></a></li>
+  <% }) %>
+</ul>
+
+<h2>Company Tips</h2>
+<ul>
+  <% companies.forEach(company => { %>
+    <li><a href="/interview/tips/<%= company %>"><%= company %></a></li>
+  <% }) %>
+</ul>
