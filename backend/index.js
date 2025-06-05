@@ -20,6 +20,9 @@ const corsOptions = {
     origin:'http://localhost:5173',
     credentials:true
 }
+const interviewToolkitRoutes = require('./routes/interviewToolkit');
+app.use('/interview', interviewToolkitRoutes);
+
 
 app.use(cors(corsOptions));
 
