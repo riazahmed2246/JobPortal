@@ -1,0 +1,32 @@
+{
+  "questions": {
+    "frontend": [
+      "What is the Virtual DOM?",
+      "Explain event delegation in JavaScript."
+    ],
+    "backend": [
+      "What are microservices?",
+      "How do you handle authentication in Node.js?"
+    ]
+  },
+  "tips": {
+    "Google": [
+      "Practice system design questions.",
+      "Understand Google's leadership principles."
+    ],
+    "Amazon": [
+      "Use STAR method for behavioral questions.",
+      "Focus on customer obsession and ownership."
+    ]
+  },
+  "videos": [
+    {
+      "title": "Frontend Interview Tips",
+      "url": "https://www.youtube.com/embed/abcd1234"
+    },
+    {
+      "title": "System Design Overview",
+      "url": "https://www.youtube.com/embed/wxyz5678"
+    }
+  ]
+}
