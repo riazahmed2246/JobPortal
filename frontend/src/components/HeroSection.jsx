@@ -19,14 +19,13 @@ const HeroSection = () => {
         <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 text-center">
             <div className="max-w-3xl mx-auto flex flex-col gap-6">
                 {/* Badge */}
-                <span className="inline-block bg-gray-100 text-[#F83002] font-medium text-sm px-4 py-2 rounded-full shadow-sm">
+                {/* <span className="inline-block bg-gray-100 text-[#F83002] font-medium text-sm px-4 py-2 rounded-full shadow-sm">
                      Job Hunt Website
-                </span>
+                </span> */}
 
                 {/* Title */}
                 <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-gray-900">
-                    Search, Apply &<br />
-                    Get Your <span className="text-[#6A38C2]">Dream Jobs</span>
+                    Search Your Dream Jobs
                 </h1>
 
                 {/* Description */}

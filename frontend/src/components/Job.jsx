@@ -151,7 +151,7 @@ const Job = ({ job }) => {
                     <h2 className="font-semibold text-lg text-gray-800">
                         {job?.company?.name}
                     </h2>
-                    <p className="text-xs text-gray-500">India</p>
+                    <p className="text-xs text-gray-500">Bangladesh</p>
                 </div>
             </div>
 
@@ -172,7 +172,7 @@ const Job = ({ job }) => {
                     {job?.jobType}
                 </Badge>
                 <Badge variant="ghost" className="text-[#7209b7] font-medium">
-                    ₹{job?.salary} LPA
+                    BDT {job?.salary}k
                 </Badge>
             </div>
 
