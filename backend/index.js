@@ -3,10 +3,12 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./utils/db.js";
+
 import userRoute from "./routes/user.js";
 import companyRoute from "./routes/company.js";
 import jobRoute from "./routes/job.js";
 import applicationRoute from "./routes/application.js";
+
 
 dotenv.config({});
 
@@ -20,6 +22,9 @@ const corsOptions = {
     origin:'http://localhost:5173',
     credentials:true
 }
+const interviewToolkitRoutes = require('./routes/interviewToolkit');
+app.use('/interview', interviewToolkitRoutes);
+
 
 app.use(cors(corsOptions));
 
