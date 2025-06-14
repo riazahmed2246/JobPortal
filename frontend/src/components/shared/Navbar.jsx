@@ -43,12 +43,14 @@ const Navbar = () => {
                         <>
                             <Link to="/admin/companies" className="hover:text-[#6A38C2] transition">Companies</Link>
                             <Link to="/admin/jobs" className="hover:text-[#6A38C2] transition">Jobs</Link>
+                            <Link to="/admin/video-interviews" className="hover:text-[#6A38C2] transition">Video Interviews</Link>
                         </>
                     ) : (
                         <>
                             <Link to="/" className="hover:text-[#6A38C2] transition">Home</Link>
                             <Link to="/jobs" className="hover:text-[#6A38C2] transition">Jobs</Link>
                             <Link to="/browse" className="hover:text-[#6A38C2] transition">Browse</Link>
+
                         </>
                     )}
                 </nav>

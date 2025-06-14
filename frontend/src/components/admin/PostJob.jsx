@@ -115,7 +115,7 @@ const PostJob = () => {
                 name='salary'
                 value={input.salary}
                 onChange={changeEventHandler}
-                placeholder='e.g. $60,000 - $80,000'
+                placeholder='e.g. BDT 40k'
               />
             </div>
             <div>
@@ -125,7 +125,7 @@ const PostJob = () => {
                 name='location'
                 value={input.location}
                 onChange={changeEventHandler}
-                placeholder='e.g. New York, Remote'
+                placeholder='e.g. Dhaka, Remote'
               />
             </div>
             <div>

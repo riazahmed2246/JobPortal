@@ -11,11 +11,11 @@ const filterData = [
   },
   {
     filterType: 'Industry',
-    array: ['Frontend Developer', 'Backend Developer', 'FullStack Developer'],
+    array: ['Frontend Developer', 'Backend Developer', 'FullStack Developer', 'Mobile App Developer', 'Graphic Designer'],
   },
   {
     filterType: 'Salary',
-    array: ['0-40k', '42k-1L', '1L-5L'],
+    array: ['0-40k', '41-80k', '81k-120k'],
   },
 ];
 

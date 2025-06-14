@@ -70,7 +70,7 @@ const JobDescription = () => {
                             {singleJob?.jobType}
                         </Badge>
                         <Badge variant="ghost" className="text-[#7209b7] font-medium">
-                            ₹{singleJob?.salary} LPA
+                            BDT {singleJob?.salary}k
                         </Badge>
                     </div>
                 </div>
@@ -107,12 +107,12 @@ const JobDescription = () => {
                 </div>
                 <div>
                     <span className="font-semibold text-gray-800">Salary:</span>
-                    <span className="pl-4">₹{singleJob?.salary} LPA</span>
+                    <span className="pl-4">BDT {singleJob?.salary}k</span>
                 </div>
                 <div>
                     <span className="font-semibold text-gray-800">Total Applicants:</span>
                     <span className="pl-4">{singleJob?.applications?.length}</span>
-                </div>
+                </div>c
                 <div>
                     <span className="font-semibold text-gray-800">Posted On:</span>
                     <span className="pl-4">{singleJob?.createdAt?.split("T")[0]}</span>
