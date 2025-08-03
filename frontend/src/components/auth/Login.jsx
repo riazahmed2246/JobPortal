@@ -97,7 +97,7 @@ const Login = () => {
                   className="cursor-pointer"
                 />
                 <Label htmlFor="student" className="cursor-pointer">
-                  Student
+                  Seeker
                 </Label>
               </div>
               <div className="flex items-center space-x-2">

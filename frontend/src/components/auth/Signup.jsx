@@ -81,7 +81,7 @@ const Signup = () => {
               name="fullname"
               value={input.fullname}
               onChange={changeEventHandler}
-              placeholder="Risan Ahmed"
+              placeholder="Ferdous"
             />
           </div>
 
@@ -92,7 +92,7 @@ const Signup = () => {
               name="email"
               value={input.email}
               onChange={changeEventHandler}
-              placeholder="risan@example.com"
+              placeholder="ferdous@example.com"
             />
           </div>
 
@@ -103,7 +103,7 @@ const Signup = () => {
               name="phoneNumber"
               value={input.phoneNumber}
               onChange={changeEventHandler}
-              placeholder="0123456789"
+              placeholder="01700000000"
             />
           </div>
 
@@ -130,7 +130,7 @@ const Signup = () => {
                   onChange={changeEventHandler}
                   className="cursor-pointer"
                 />
-                <Label htmlFor="student" className="cursor-pointer">Student</Label>
+                <Label htmlFor="student" className="cursor-pointer">Seeker</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <Input
