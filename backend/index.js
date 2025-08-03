@@ -44,7 +44,11 @@ app.use("/api/v1/blogs", blogRoutes);
 
 
 
-app.listen(PORT, () => {
+// app.listen(PORT, () => {
+//     connectDB();
+//     console.log(`Server running at port ${PORT}`);
+// })
+app.listen(PORT, "0.0.0.0", () => { // Bind to 0.0.0.0
     connectDB();
-    console.log(`Server running at port ${PORT}`);
-})
+    console.log(`Server is running on port ${port}`);
+});
