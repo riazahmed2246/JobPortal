@@ -1,3 +1,91 @@
+
+# OpenSSL configuration file for lab CSE-478 CA and cert generation
+
+[ ca ]
+# Which CA to use by default
+default_ca = CA_default
+
+[ CA_default ]
+# Directory where everything is kept
+dir               = ./demoCA
+
+certs             = $dir/certs
+crl_dir           = $dir/crl
+new_certs_dir     = $dir/newcerts
+database          = $dir/index.txt
+serial            = $dir/serial
+RANDFILE          = $dir/private/.rand
+
+private_key       = $dir/private/ca.key
+certificate       = $dir/certs/ca.crt
+
+default_days      = 365
+default_md        = sha256
+preserve          = no
+
+policy            = policy_match
+
+
+[ policy_match ]
+countryName             = match
+stateOrProvinceName     = match
+organizationName        = match
+organizationalUnitName  = optional
+commonName              = supplied
+emailAddress            = optional
+
+[ req ]
+default_bits        = 2048
+default_keyfile     = key.pem
+distinguished_name  = req_distinguished_name
+string_mask         = utf8only
+prompt              = yes
+default_md          = sha256
+x509_extensions     = v3_ca    # for self-signed CA certs
+
+[ req_distinguished_name ]
+countryName                     = Country Name (2 letter code)
+countryName_default             = BD
+stateOrProvinceName             = Dhaka
+localityName                    = Dhaka
+organizationName                = ExampleOrg
+organizationalUnitName          = IT Department
+commonName                     = example.com
+emailAddress                    = admin@example.com
+
+[ v3_ca ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+basicConstraints = critical, CA:true
+keyUsage = critical, cRLSign, keyCertSign
+
+
+
+[ usr_cert ]
+basicConstraints = CA:FALSE
+nsCertType = client, email
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = clientAuth, emailProtection
+
+[ server_cert ]
+basicConstraints = CA:FALSE
+nsCertType = server
+keyUsage = digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = example.com
+DNS.2 = www.example.com
+DNS.3 = localhost
+
+
+
+mkdir -p demoCA/certs demoCA/crl demoCA/newcerts
+touch demoCA/index.txt
+echo 1000 > demoCA/serial
+
+
 1. Install Apache
 
 sudo apt update
